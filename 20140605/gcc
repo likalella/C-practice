@@ -1,0 +1,23 @@
+#include <stdio.h>
+void my_reverse(int a[])
+{
+		int i=sizeof(a)-1;
+		for(; i>=0; i--)
+		{
+				printf("%d ", a[i]);
+		}
+		printf("\n");
+}
+int main(void)
+{
+		int i=0;
+		int a[10] = {0,2,4,6,8,10,12,14,16,18};
+		printf("%d\n", sizeof(a));
+		for(i=0; i<sizeof(a); i++)
+		{
+				printf("%d ",a[i]);
+		}
+		printf("\n");
+//		my_reverse(a);
+		return 0;
+}
